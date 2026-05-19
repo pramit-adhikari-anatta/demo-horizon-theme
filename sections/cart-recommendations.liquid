@@ -1,0 +1,39 @@
+{% assign product_id = cart.items.first.product_id %}
+
+<div id="CartRecommendations">
+  {% if cart.item_count > 0 and product_id %}
+    <div
+      class="cart-recommendations"
+      data-product-id="{{ product_id }}"
+      data-section-id="{{ section.id }}"
+    >
+      {% if recommendations.performed? and recommendations.products_count > 0 %}
+        <h3>You may also like</h3>
+
+        <div class="cart-recommendations__grid">
+          {% for product in recommendations.products limit: 4 %}
+            <div class="cart-recommendations__item">
+              <a href="{{ product.url }}">
+                {{ product.featured_image | image_url: width: 160 | image_tag }}
+                <p>{{ product.title }}</p>
+                <span>{{ product.price | money }}</span>
+              </a>
+
+              {% form 'product', product %}
+                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                <button type="submit">Add</button>
+              {% endform %}
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Cart Recommendations",
+  "settings": []
+}
+{% endschema %}
