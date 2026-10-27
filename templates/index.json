@@ -300,10 +300,189 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "subscribe_save_8xR2Qk": {
+      "type": "section",
+      "blocks": {
+        "image_9fQ2mN": {
+          "type": "image",
+          "name": "t:names.image",
+          "settings": {
+            "image": "shopify://shop_images/figma-exported-subscribe-save.png",
+            "image_ratio": "square"
+          },
+          "blocks": {}
+        },
+        "group_4kLpXr": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "width": "custom",
+            "gap": 20
+          },
+          "blocks": {
+            "heading_7bTz2Q": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Subscribe & Save</h2>",
+                "type_preset": "h3"
+              },
+              "blocks": {}
+            },
+            "description_3wNc8H": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Never run out. Save 15% and get your favorites delivered on your schedule.</p>",
+                "type_preset": "rte",
+                "max_width": "narrow"
+              },
+              "blocks": {}
+            },
+            "group_benefit_1_vD5tQp": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "row",
+                "vertical_on_mobile": false,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "gap": 12
+              },
+              "blocks": {
+                "icon_WnZ4kB": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "price_tag",
+                    "width": 24,
+                    "link": ""
+                  },
+                  "blocks": {}
+                },
+                "text_LmQ8rT": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Save 15% on every order</p>",
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": ["icon_WnZ4kB", "text_LmQ8rT"]
+            },
+            "group_benefit_2_f8Nx6J": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "row",
+                "vertical_on_mobile": false,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "gap": 12
+              },
+              "blocks": {
+                "icon_Qz7mPd": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "truck",
+                    "width": 24,
+                    "link": ""
+                  },
+                  "blocks": {}
+                },
+                "text_Rk2VcN": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Free shipping, always</p>",
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": ["icon_Qz7mPd", "text_Rk2VcN"]
+            },
+            "group_benefit_3_hY9sLw": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "content_direction": "row",
+                "vertical_on_mobile": false,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "gap": 12
+              },
+              "blocks": {
+                "icon_Bx3nFa": {
+                  "type": "icon",
+                  "name": "t:names.icon",
+                  "settings": {
+                    "icon": "return",
+                    "width": 24,
+                    "link": ""
+                  },
+                  "blocks": {}
+                },
+                "text_Jv6pMs": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Skip or cancel anytime</p>",
+                    "type_preset": "paragraph"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": ["icon_Bx3nFa", "text_Jv6pMs"]
+            },
+            "button_Tn4cXq": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Subscribe & Save",
+                "link": "shopify://collections/subscribe-and-save",
+                "open_in_new_tab": false,
+                "style_class": "button"
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "heading_7bTz2Q",
+            "description_3wNc8H",
+            "group_benefit_1_vD5tQp",
+            "group_benefit_2_f8Nx6J",
+            "group_benefit_3_hY9sLw",
+            "button_Tn4cXq"
+          ]
+        }
+      },
+      "block_order": [
+        "image_9fQ2mN",
+        "group_4kLpXr"
+      ],
+      "name": "Subscribe & Save",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "space-between",
+        "vertical_alignment": "center",
+        "gap": 48,
+        "section_width": "page-width",
+        "color_scheme": "scheme-2",
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
     }
   },
   "order": [
     "hero_jVaWmY",
-    "product_list_fa6P9H"
+    "product_list_fa6P9H",
+    "subscribe_save_8xR2Qk"
   ]
 }
